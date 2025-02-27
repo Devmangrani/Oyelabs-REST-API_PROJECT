@@ -2,6 +2,12 @@
 
 A robust RESTful API built with Node.js, Express, and PostgreSQL, featuring user management, authentication, and comprehensive API documentation.
 
+<h2 align="center">🎯 Made by Dev Mangrani </h2>  
+<h3 align="center">🏢 For Oyelabs Technologies Pvt. Ltd. </h3>  
+<h3 align="center">💻 Assignment for Node.js Developer Internship </h3>
+
+
+
 
 ## 🎯 Project Objectives
 
