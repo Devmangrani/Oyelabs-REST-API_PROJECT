@@ -2,7 +2,6 @@
 
 A robust RESTful API built with Node.js, Express, and PostgreSQL, featuring user management, authentication, and comprehensive API documentation.
 
-[View Repository](https://github.com/Devmangrani/Oyelabs-REST-API_PROJECT.git)
 
 ## 🎯 Project Objectives
 
