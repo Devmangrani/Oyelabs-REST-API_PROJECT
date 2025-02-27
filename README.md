@@ -133,42 +133,56 @@ Access the Swagger documentation at: `http://localhost:3000/api-docs`
 
 ## 🔍 Postman Testing
 
-[Add your Postman screenshots here]
+Here are the API endpoints tested in Postman:
 
 ### Example Requests
 
 1. **Create User**
-   ![Create User](path_to_create_user_screenshot.png)
+   ![Create User](./screenshots/create-user.png)
+
+   ```http
+   POST http://localhost:3000/api/users
+   Content-Type: application/json
+
+   {
+       "name": "Test User",
+       "email": "test@example.com",
+       "password": "password123"
+   }
+   ```
 
 2. **Login**
-   ![Login](path_to_login_screenshot.png)
+   ![Login](./screenshots/login.png)
+
+   ```http
+   POST http://localhost:3000/api/auth/login
+   Content-Type: application/json
+
+   {
+       "email": "test@example.com",
+       "password": "password123"
+   }
+   ```
 
 3. **Get Users**
-   ![Get Users](path_to_get_users_screenshot.png)
+   ![Get Users](./screenshots/login.png)
+   ```http
+   GET http://localhost:3000/api/users
+   Authorization: Bearer <your_jwt_token>
+   ```
 
-## 🌟 Project Structure
+### Response Examples
 
-rest-api-project/
-├── src/
-│ ├── config/
-│ │ ├── database.js
-│ │ ├── config.js
-│ │ └── swagger.js
-│ ├── middleware/
-│ │ ├── auth.js
-│ │ ├── errorHandler.js
-│ │ └── validateUser.js
-│ ├── models/
-│ │ └── user.js
-│ ├── routes/
-│ │ ├── auth.routes.js
-│ │ └── user.routes.js
-│ └── index.js
-├── .env
-├── .gitignore
-├── package.json
-└── README.md
-:
+1. **Successful User Creation**
+   ![Create User Response](./screenshots/create-user-response.png)
+
+2. **Successful Login**
+   ![Login Response](./screenshots/login-dev.png)
+
+3. **Get Users with Pagination**
+   ![Get Users Response](./screenshots/get-users-response.png)
+
+
 
 ## 🔒 Environment Files
 
